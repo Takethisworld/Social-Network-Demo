@@ -53,7 +53,7 @@ let mapStateToProps=(state)=>({
 let AppContainer = compose(withRouter,connect(mapStateToProps, { initialThunk }))(App);
 
 const JsReactApp =(props)=>{
-  return(<HashRouter basename={process.env.PUBLIC_URL}>
+  return(<HashRouter >
     <Provider store={store}>
       <AppContainer />
     </Provider>
