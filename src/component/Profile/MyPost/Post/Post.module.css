@@ -1,0 +1,22 @@
+.content{
+  grid-area: c;
+  background-color: greenyellow;
+}
+.post{
+  color: black;
+  background: cadetblue;
+}
+.textarea{
+border: none;
+}
+.add_button{
+  border: none;
+}
+.remove_button{
+  border:none;
+}
+.item img{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}

@@ -1,0 +1,9 @@
+.ava{
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+}
+.pageNumber{
+    font-weight: bold;
+    cursor: pointer;
+}

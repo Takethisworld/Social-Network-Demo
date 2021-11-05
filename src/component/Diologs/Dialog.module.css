@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+.dialog{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: darkblue;
+}
+.dialog .dModule{
+    padding: 10px;
+    color: rgb(163, 104, 14);
+}
+.message{
+    padding: 10px;
+    color: white;
+}
+.dialog .dialogs{
+    text-decoration: none;
+}
