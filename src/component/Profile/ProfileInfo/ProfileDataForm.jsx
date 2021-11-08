@@ -1,5 +1,5 @@
 import React from 'react';
-import style from 'Profileinfo.module.css'
+import style from './Profileinfo.module.css'
 import { createField, Textarea,Input } from '../../common/FormControl/FormControl';
 
 const ProfileDataForm =({handleSubmit,profile,error})=>{

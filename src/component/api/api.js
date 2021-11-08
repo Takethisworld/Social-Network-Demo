@@ -17,8 +17,8 @@ export const authAPI = {
                 return response.data;
             });
     },
-    loginGet(email,password,rememberMe = false) {
-        return instance.post(`auth/login`, {email,password,rememberMe})
+    loginGet(email,password,rememberMe = false, captcha=null) {
+        return instance.post(`auth/login`, {email,password,rememberMe,captcha})
     },
     getLogOut() {
         return instance.delete(`auth/login`)
@@ -68,6 +68,14 @@ export const usersAPI = {
 
 
 }
+
+export const securityApi={
+    getCaptchaUrl() {
+        return instance.get(`security/get-captcha-url`)
+    },
+    
+}
+
 
 
 
