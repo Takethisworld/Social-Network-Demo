@@ -1,7 +1,7 @@
 import React from 'react';
 import Profile from './profile';
 import { connect } from 'react-redux';
-import { profileThunk, createStatus,updateStatus,savePhotos } from '../redux/postReducer';
+import { profileThunk, createStatus,updateStatus,savePhotos,saveProfile } from '../redux/postReducer';
 import { withRouter} from 'react-router-dom';
 import {compose} from 'redux';
 
@@ -55,6 +55,6 @@ let mapStateToProps = (state) => ({
 
 
 export default compose (
-  connect(mapStateToProps, { profileThunk, createStatus,updateStatus,savePhotos }),
+  connect(mapStateToProps, { profileThunk, createStatus,updateStatus,savePhotos,saveProfile }),
   withRouter
 )(ProfileContainer)

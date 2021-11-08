@@ -28,6 +28,7 @@ const HooksForStatus = (props) => {
     <div>
       {! editMode &&
         <div>
+          <b>Status</b>
           <span onClick={activateMode}>{props.status || "Set status MZFK"} </span>
         </div>
       }

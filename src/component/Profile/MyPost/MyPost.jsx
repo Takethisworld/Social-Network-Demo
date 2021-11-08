@@ -25,7 +25,7 @@ const MyPost = React.memo(props => {
 
     console.log("RENDER");
 
-    let postElement = props.post.map(p => <Post message={p.message} like={p.likeCounter} />);
+    let postElement = props.post.map(p => <Post key={p.id} message={p.message} like={p.likeCounter} />);
 
     let newPost = (value) => {
       props.addPost(value.newPostForm);

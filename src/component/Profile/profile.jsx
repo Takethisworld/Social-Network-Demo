@@ -7,7 +7,12 @@ const Profile=(props)=>{
 
 return<div>
     <div>
-      <ProfileInfo savePhoto={props.savePhotos}profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
+      <ProfileInfo 
+      savePhoto={props.savePhotos}
+      profile={props.profile} 
+      status={props.status} 
+      updateStatus={props.updateStatus}
+      saveProfile={props.saveProfile}/>
     </div>
   <div className={s.post}>
     <MyPostContainer store={props.store}/>
